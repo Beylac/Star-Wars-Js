@@ -3,6 +3,7 @@
 
 <head>
     <link href="index.css" rel="stylesheet">
+    
     <title>Star Wars API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,25 +16,36 @@
 
         <h1><a class="que-buscas">Que estas buscando?</a></h1>
 
-        <form action="https://www.google.com/search" class="search-bar">
-            <input type="text" placeholder="Consulta lo que quieras sobre Star Wars..." name="search">
+
+        <select class="search-bar" id="movie-select">
+            <option value="" selected disabled hidden>Elija una pelicula</option>
+            <option value="1">Episodio IV</option>
+            <option value="2">Episodio V</option>
+            <option value="3">Episodio VI</option>
+            <option value="4">Episodio I</option>
+            <option value="5">Episodio II</option>
+            <option value="6">Episodio III</option>
+
+        </select>
+        <!--
+
+        <form   class="search-bar">
+            <input type="text" placeholder="Busca tu personaje favorito..." name="search">
             <button type="submit"></i><img src="images/search.png"></button>
         </form>
 
-        <video autoplay muted loop id="myVideo">
-            
-            
-            <source src="images/swfight.mp4" type="video/mp4">
-            
-
-        </video>
-        
-<!--
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/C3HMz25LvnY?controls=0&autoplay=1&mute=1&playsinline=1&loop=1"> </iframe> 
-        </div>
         -->
+
+        <video autoplay muted loop id="myVideo">            
+            <source src="images/swfight.mp4" type="video/mp4"> 
+        </video>
+
+        <div id="cardContainer" class={`vacio ${response ? "cardContainer" : null}`}></div>
+        <!-- Para que no aparezca el cardContainer antes de elegir la peli -->
+  
     </div>
+
+    <script src = "index.js"></script>
 </body>
 
 <footer>
