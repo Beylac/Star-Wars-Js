@@ -14,17 +14,26 @@
 
         <img class="logo" src="images/logo.png">
 
-        <h1><a class="que-buscas">Que estas buscando?</a></h1>
+        <h1><a class="que-buscas">What are you looking for?</a></h1>
 
 
         <select class="search-bar" id="movie-select">
-            <option value="" selected disabled hidden>Elija una pelicula</option>
-            <option value="1">Episodio IV</option>
-            <option value="2">Episodio V</option>
-            <option value="3">Episodio VI</option>
-            <option value="4">Episodio I</option>
-            <option value="5">Episodio II</option>
-            <option value="6">Episodio III</option>
+            <option value="" selected disabled hidden>Choose a character</option>
+            <option value="1">Luke Skywalker</option>
+            <option value="2">C-3PO</option>
+            <option value="3">R2-D2</option>
+            <option value="4">Darth Vader</option>
+            <option value="5">Leia Organa</option>
+            <option value="6">Owen Lars</option>
+            <option value="7">Beru Whitesun lars</option>
+            <option value="8">R5-D4</option>
+            <option value="9">Biggs Darklighter</option>
+            <option value="10">Obi-Wan Kenobi</option>
+            <option value="11">Anakin Skywalker</option>
+            <option value="12">Wilhuff Tarkin</option>
+            <option value="13">Chewbacca</option>
+            <option value="14">Han Solo</option>
+            <option value="15">Greedo</option>
 
         </select>
         <!--
@@ -39,8 +48,8 @@
         <video autoplay muted loop id="myVideo">            
             <source src="images/swfight.mp4" type="video/mp4"> 
         </video>
-
-        <div id="cardContainer" class={`vacio ${response ? "cardContainer" : null}`}></div>
+        
+        <div id="cardContainer" class={`vacio $response {? "cardContainer" : null}`}></div>
         <!-- Para que no aparezca el cardContainer antes de elegir la peli -->
   
     </div>
@@ -52,3 +61,61 @@
 </footer>
 
 </html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="index.css" rel="stylesheet">
+    
+    <title>Star Wars API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <div class="buscador">
+
+        <img class="logo" src="images/logo.png">
+
+        <h1><a class="que-buscas">Que estas buscando?</a></h1>
+
+
+        <select class="search-bar" id="movie-select">
+            <option value="" selected disabled hidden>Elija una pelicula</option>
+            <option value="1">Episodio IV</option>
+            <option value="2">Episodio V</option>
+            <option value="3">Episodio VI</option>
+            <option value="4">Episodio I</option>
+            <option value="5">Episodio II</option>
+            <option value="6">Episodio III</option>
+
+        </select>
+        <!
+
+        <form   class="search-bar">
+            <input type="text" placeholder="Busca tu personaje favorito..." name="search">
+            <button type="submit"></i><img src="images/search.png"></button>
+        </form>
+
+        
+
+        <video autoplay muted loop id="myVideo">            
+            <source src="images/swfight.mp4" type="video/mp4"> 
+        </video>
+
+        <div id="cardContainer" class={`vacio ${response ? "cardContainer" : null}`}></div>
+        <!-- Para que no aparezca el cardContainer antes de elegir la peli 
+  
+    </div>
+
+    <script src = "index.js"></script>
+</body>
+
+<footer>
+</footer>
+
+</html> -->
